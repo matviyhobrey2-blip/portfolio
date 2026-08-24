@@ -67,6 +67,25 @@ textarea {
   margin: 0 auto;
 }
 
+.hero-grid > *,
+.about-grid > *,
+.contact-shell > *,
+.skill-card,
+.project-card,
+.service-card {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+strong,
+span,
+a {
+  overflow-wrap: anywhere;
+}
+
 .section {
   padding: 6rem 0;
 }
@@ -564,6 +583,7 @@ textarea {
 
 .contact-links strong {
   color: var(--text);
+  overflow-wrap: anywhere;
 }
 
 .contact-form {
@@ -745,16 +765,58 @@ textarea {
 }
 
 @media (max-width: 520px) {
+  .container {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
   .section {
-    padding: 4.5rem 0;
+    padding: 3.75rem 0;
   }
 
   .hero {
-    padding-top: 4.4rem;
+    padding-top: 3.5rem;
   }
 
   .hero-copy h1 {
-    font-size: 2.7rem;
+    font-size: clamp(2.25rem, 11vw, 2.7rem);
+  }
+
+  .section-heading h2,
+  .contact-copy h2 {
+    font-size: clamp(1.9rem, 9vw, 2.35rem);
+  }
+
+  .hero-actions {
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    min-height: 42px;
+    padding: 0.65rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .glass-panel,
+  .skill-card,
+  .project-card,
+  .service-card {
+    padding: 1.1rem;
+  }
+
+  .card-header {
+    align-items: flex-start;
+    font-size: 0.78rem;
+  }
+
+  .contact-links a {
+    gap: 0.35rem;
+    padding: 0.8rem;
+  }
+
+  .contact-links strong {
+    font-size: 0.88rem;
   }
 
   .stats-grid {
