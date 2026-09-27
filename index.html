@@ -1,41 +1,39 @@
-<<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Matt is a passionate web developer specializing in responsive websites, polished user interfaces, and interactive digital experiences with HTML, CSS, and JavaScript."
+      content="Матвій — фронтенд-розробник. Шукаю невеликі проєкти для портфоліо та відгуків."
     />
-    <title>Matt | Web Developer</title>
+    <meta name="theme-color" content="#090a0a" />
+    <title>Матвій | Фронтенд-розробник</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="container nav" aria-label="Main navigation">
-        <a href="#top" class="brand" aria-label="Matt home">
-          <span class="brand-mark">M</span>
-          <span>Matt</span>
+      <nav class="container nav" aria-label="Головна навігація">
+        <a href="#top" class="brand" aria-label="На початок">
+          <img class="brand-mark" src="kit2.jpg" alt="Профільне фото Матвія" />
         </a>
 
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navLinks">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
         <div class="nav-links" id="navLinks">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Work</a>
-          <a href="#services">Services</a>
-          <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
+          <a href="#about">Про мене</a>
+          <a href="#experience">Мій досвід</a>
+          <a href="#contact" class="btn btn-primary nav-cta">Контакти</a>
         </div>
       </nav>
     </header>
@@ -44,304 +42,132 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Web Developer</p>
-            <h1>
-              I build responsive websites, polished interfaces, and interactive web experiences.
-            </h1>
+            <p class="eyebrow">Фронтенд · HTML · CSS · JavaScript</p>
+            <h1>Створюю сайти, якими приємно користуватись.</h1>
             <p class="lead">
-              Hi, I’m Matt — a developer focused on clean HTML, thoughtful CSS, and JavaScript that makes every interaction feel seamless.
+              Привіт, я Матвій. Я завершив курс із фронтенд-розробки та впевнено працюю з HTML, CSS і JavaScript. Зараз шукаю невеликі проєкти, щоб застосувати знання на практиці й поповнити портфоліо.
             </p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-secondary">Let's Collab</a>
+              <a href="#contact" class="btn btn-primary">Обговорити проєкт <span aria-hidden="true">↗</span></a>
+              <a href="#about" class="btn btn-secondary">Дізнатися більше</a>
             </div>
-
-            <div class="hero-meta">
-              <div class="meta-item">
-                <strong>HTML</strong>
-                <span>Semantic Structure</span>
-              </div>
-              <div class="meta-item">
-                <strong>CSS</strong>
-                <span>Responsive Design</span>
-              </div>
-              <div class="meta-item">
-                <strong>100%</strong>
-                <span>Immersive Polish</span>
-              </div>
-            </div>
+            <p class="availability"><span class="status-dot"></span> Відкритий до невеликих проєктів і співпраці</p>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="glass-panel profile-card">
-              <div class="card-header">
-                <span class="status-dot"></span>
-                <span>Ready for commissions & teams</span>
-              </div>
-
-              <div class="profile-main">
-                <div class="avatar">M</div>
-                <div>
-                  <p class="small-label">Creator profile</p>
-                  <h2>Matvey</h2>
-                  <p class="muted-text">Web Developer</p>
-                </div>
-              </div>
-
-              <div class="stack-box">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>UI Design</span>
-              </div>
-
-              <div class="stats-grid">
-                <div>
-                  <small>Specialty</small>
-                  <strong>Custom Systems</strong>
-                </div>
-                <div>
-                  <small>Execution</small>
-                  <strong>Fast & Clean</strong>
-                </div>
-              </div>
+          <aside class="hero-visual reveal" aria-label="Коротко про мою роботу">
+            <div class="profile-card">
+              <p class="card-kicker">Зараз у фокусі</p>
+              <p class="card-number">01<span>/03</span></p>
+              <h2>Практика, реальні задачі та чесний відгук.</h2>
+              <div class="card-divider"></div>
+              <p class="card-note">HTML <span>·</span> CSS <span>·</span> JavaScript</p>
             </div>
-          </div>
+            <span class="hero-index">ПОРТФОЛІО · 2026</span>
+          </aside>
         </div>
       </section>
 
-      <section id="about" class="section alt-section">
+      <section id="about" class="section about-section">
         <div class="container about-grid">
           <div class="section-heading reveal">
-            <p class="eyebrow">About me</p>
-            <h2>Turning ideas into smooth, useful web experiences.</h2>
+            <p class="eyebrow">Про мене</p>
+            <h2>Завершив навчання. Розвиваюся на практиці.</h2>
           </div>
-
           <div class="about-copy reveal">
             <p>
-              I’ve spent years building for the web, creating everything from semantic HTML structures and responsive CSS layouts to interactive JavaScript features and intuitive user interfaces.
+              Після завершення курсу я продовжую розвивати навички у фронтенд-розробці. Створюю адаптивні сторінки, працюю з інтерфейсами та додаю інтерактивність за допомогою JavaScript.
             </p>
             <p>
-              Whether I’m designing a personal portfolio, building a dashboard, or fine-tuning a mobile layout, I care deeply about how a website feels to use. I love collaborating with designers, creators, and other developers to bring ambitious ideas to life.
+              Зараз шукаю перших клієнтів і невеликі задачі. Оскільки поповнюю портфоліо, готовий домовлятися про помірну оплату. Для мене важливі зрозуміла комунікація, якісний результат і відгук після співпраці.
             </p>
-            <div class="about-points">
-              <span>Frontend development</span>
-              <span>UI architecture</span>
-              <span>Detail obsessed</span>
+            <div class="about-points" aria-label="Технології">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Адаптивна верстка</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section-heading centered reveal">
-            <p class="eyebrow">Core expertise</p>
-            <h2>The tools I use to build standout websites.</h2>
+      <section id="experience" class="section experience-section">
+        <div class="container experience-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Практика</p>
+            <h2>Що вмію робити.</h2>
           </div>
-
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <div class="icon">💻</div>
-              <h3>HTML</h3>
-              <p>Accessible, semantic page structures that give every website a strong and well-organized foundation.</p>
+          <div class="experience-list">
+            <article class="experience-item reveal">
+              <span class="item-number">01</span>
+              <div>
+                <h3>Верстка сайтів</h3>
+                <p>Створюю зрозумілі сторінки та адаптивні макети для телефонів і комп’ютерів.</p>
+              </div>
+              <span class="item-arrow" aria-hidden="true">↗</span>
             </article>
-
-            <article class="skill-card reveal">
-              <div class="icon">🖥️</div>
-              <h3>CSS & Responsive Design</h3>
-              <p>Responsive layouts, thoughtful visual systems, and polished interfaces that work beautifully across screen sizes.</p>
+            <article class="experience-item reveal">
+              <span class="item-number">02</span>
+              <div>
+                <h3>Інтерактивність</h3>
+                <p>Додаю JavaScript-взаємодії та просту динамічну поведінку інтерфейсу.</p>
+              </div>
+              <span class="item-arrow" aria-hidden="true">↗</span>
             </article>
-
-            <article class="skill-card reveal">
-              <div class="icon">⚙️</div>
-              <h3>JavaScript</h3>
-              <p>Interactive features, dynamic content, form validation, and smooth browser experiences powered by clean JavaScript.</p>
-            </article>
-
-            <article class="skill-card reveal">
-              <div class="icon">🗺️</div>
-              <h3>Frontend Interfaces</h3>
-              <p>Clear navigation, reusable components, and user-focused interfaces designed to make every action feel natural.</p>
-            </article>
-
-            <article class="skill-card reveal">
-              <div class="icon">🎬</div>
-              <h3>Web Experiences</h3>
-              <p>Engaging visual details, purposeful motion, and interactive pages that give each project its own character.</p>
-            </article>
-
-            <article class="skill-card reveal">
-              <div class="icon">⚡</div>
-              <h3>Optimization</h3>
-              <p>Fast-loading pages, clean code, and careful debugging for reliable performance on desktop and mobile.</p>
+            <article class="experience-item reveal">
+              <span class="item-number">03</span>
+              <div>
+                <h3>Покращення сторінок</h3>
+                <p>Допомагаю впорядкувати наявний інтерфейс, виправити помилки й відшліфувати деталі.</p>
+              </div>
+              <span class="item-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section alt-section">
-        <div class="container">
-          <div class="section-heading split-heading reveal">
-            <div>
-              <p class="eyebrow">Featured work</p>
-              <h2>Selected websites, interfaces, and creative projects.</h2>
-            </div>
-            <a href="#contact" class="text-link">Collaborate on a project</a>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <div class="project-top">
-                <span class="project-tag">Dashboard</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3>Weather Dashboard</h3>
-              <p>
-                Built a responsive weather dashboard with interactive data views, map controls, and a focused interface for exploring changing conditions.
-              </p>
-              <ul class="tech-tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <div class="project-links">
-                <a href="#contact">View details</a>
-                <a href="#contact">Test system</a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-top">
-                <span class="project-tag">Interactive</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3>Interactive Explorer</h3>
-              <p>
-                Created an engaging interactive experience with dynamic content, intuitive controls, and responsive layouts for desktop and mobile visitors.
-              </p>
-              <ul class="tech-tags">
-                <li>JavaScript</li>
-                <li>Responsive CSS</li>
-                <li>UI Design</li>
-              </ul>
-              <div class="project-links">
-                <a href="#contact">Overview</a>
-                <a href="#contact">Playtest</a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-top">
-                <span class="project-tag">Portfolio</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3>Creative Portfolio</h3>
-              <p>
-                Designed a distinctive portfolio experience that combines clear content structure, expressive visuals, and subtle motion to showcase creative work.
-              </p>
-              <ul class="tech-tags">
-                <li>Animation</li>
-                <li>Editing</li>
-                <li>Camera Tools</li>
-              </ul>
-              <div class="project-links">
-                <a href="#contact">Watch video</a>
-                <a href="#contact">Breakdown</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="section">
-        <div class="container">
-          <div class="section-heading centered reveal">
-            <p class="eyebrow">Development services</p>
-              <h2>Need a reliable web developer for your next project?</h2>
-          </div>
-
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <h3>Website Development</h3>
-              <p>
-                Building responsive websites with semantic HTML, modern CSS, and JavaScript interactions tailored to your goals.
-              </p>
-            </article>
-
-            <article class="service-card reveal">
-              <h3>UI & Dashboard Engineering</h3>
-              <p>
-                Designing and developing clean, responsive interfaces, dashboards, forms, and reusable page components.
-              </p>
-            </article>
-
-            <article class="service-card reveal">
-              <h3>Frontend Improvements</h3>
-              <p>
-                Debugging existing websites, improving performance, and adding polished features that make the experience easier to use.
-              </p>
-            </article>
-          </div>
+      <section class="invitation-section section">
+        <div class="container invitation reveal">
+          <p class="eyebrow">Відкритий до співпраці</p>
+          <h2>Є невеликий проєкт? Давайте обговоримо.</h2>
+          <p>
+            Шукаю людей для перших замовлень, проєктів у портфоліо та відгуків. Готовий почати з помірної оплати, узгодженої за обсягом роботи.
+          </p>
+          <a href="mailto:matviyhobrey2@gmail.com" class="btn btn-light">Написати мені <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
       <section id="contact" class="section contact-section">
-        <div class="container contact-shell reveal">
-          <div class="contact-copy">
-            <p class="eyebrow">Let’s work together</p>
-              <h2>Building a website or need a web developer who gets things done?</h2>
-            <p>
-              Whether you’re launching a new website or need help turning an idea into a polished web experience, let’s talk.
-            </p>
-
-            <div class="contact-links">
-              <a href="mailto:matviyhobrey2@gmail.com" aria-label="Email Matt">
-                <span>Email</span>
-                <strong>matviyhobrey2@gmail.com</strong>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub profile">
-                <span>GitHub</span>
-                <strong>github.com/Matvey24Hobrey</strong>
-              </a>
-              <a href="https://discord.com" target="_blank" rel="noreferrer" aria-label="Discord contact">
-                <span>Discord</span>
-                <strong>@monkeys0228</strong>
-              </a>
-            </div>
+        <div class="container contact-row">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Контакти</p>
+            <h2>Буду радий вашому повідомленню.</h2>
           </div>
-
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="field-group">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name or handle" required />
-              <small class="error-message" aria-live="polite"></small>
-            </div>
-
-            <div class="field-group">
-              <label for="email">Contact / Email</label>
-              <input id="email" name="email" type="text" placeholder="Discord tag or email" required />
-              <small class="error-message" aria-live="polite"></small>
-            </div>
-
-            <div class="field-group">
-              <label for="message">Project details</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me about your game or project..." required></textarea>
-              <small class="error-message" aria-live="polite"></small>
-            </div>
-
-            <button type="submit" class="btn btn-primary full-width">Send Message</button>
-            <p class="form-status" aria-live="polite"></p>
-          </form>
+          <div class="contact-links reveal">
+            <a href="mailto:matviyhobrey2@gmail.com">
+              <span>Електронна пошта</span>
+              <strong>matviyhobrey2@gmail.com</strong>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/Matvey24Hobrey" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <strong>github.com/Matvey24Hobrey</strong>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://discord.com/users/monkeys0228" target="_blank" rel="noreferrer">
+              <span>Discord</span>
+              <strong>@monkeys0228</strong>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <p>© <span id="year"></span> Matt. All rights reserved.</p>
-        <a href="#top">Back to top</a>
+        <p>© <span id="year"></span> Матвій</p>
+        <a href="#top">На початок ↑</a>
       </div>
     </footer>
 
